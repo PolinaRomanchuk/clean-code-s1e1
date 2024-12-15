@@ -58,8 +58,8 @@ button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.item-adder__button, 
-.task-list__edit-button, 
+.item-adder__button:hover, 
+.task-list__edit-button:hover, 
 .task-list__delete-button:hover {
   color: #3a3A3a;
 }
@@ -87,7 +87,7 @@ button{
   font-family: Lato, sans-serif;
   color: #888;
 }
-.item-adder__input, 
+.item-adder__input:focus, 
 .task-list__input:focus {
   color: #333;
 }
