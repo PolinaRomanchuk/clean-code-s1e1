@@ -18,19 +18,25 @@ var completedTasksHolder=document.querySelector(".task-list__items_completed");/
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.className='task-list__item task-list__item_incomplete';
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.className = 'task-list__checkbox';
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.className = 'task-list__edit-button';
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
+
+    deleteButton.className = 'task-list__delete-button';
+    deleteButtonImg.className = 'task-list__delete-icon';
 
     label.innerText=taskString;
     label.className='task-list__label';
